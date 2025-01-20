@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff); /* Light gradient */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url(./background.jpg);
+}
+
+.heading h1{
+    color: white;
+}
+.form-label{
+    color: white;
+}
+.heading1 h1{
+    color: white;
+}
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a237e; /* Dark navy */
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    background-color: #3949ab; /* Lighter navy */
+}
+
+/* Card Design */
+.card, .crd3 {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.card h3, .crd3 h3 {
+    color: #1a237e;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #3949ab;
+    box-shadow: 0 0 5px rgba(57, 73, 171, 0.5);
+}
+
+/* Buttons */
+.btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3949ab;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn a:hover {
+    background-color: #5c6bc0;
+}
+.btun3{
+    /* text-align: center; */
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
+    margin-left: 530px;
+    width: 200px;
+}
+
+/* Private Section */
+.pvt {
+    margin: 20px auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pvt label {
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 900px;
+    /* display: flex; */
+    display: inline-flex;
+    gap: 5px;
+    /* justify-content: center; */
+    text-align: center;
+}
+ .pvt input{
+    gap: 0px;
+    text-align: left;
+} 
+/* Responsiveness */
+ @media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card, .crd3 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn a {
+        width: 100%;
+        text-align: center;
+    }
+}
